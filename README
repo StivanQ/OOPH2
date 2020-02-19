@@ -1,0 +1,23 @@
+// PATRAȘ ANTON-FABIAN
+// 324CB
+// NOIEMBRIE 2019
+
+Nu eu existat dificultati in rezolvarea temei.
+
+Proiectul contine urmatoarele clase:
+
+House - contine termostatul si camerele
+Room - contine senzorul aferent
+Sensor - contine datele citite de el
+Data - contine un arraylist de treeset-uri de Double in care sunt stocate valorile de temperatura/ umiditate
+Thermostat - contine senzorii si informatii precum initialTimestamp, globalTemperature etc
+Parser - se ocupa cu citire/scriere fisier, interpreteaza inputul si scrie la output
+NoDataFoundException - in cazul in care nu e data inregistrata de senzorul respectiv sa nu returnez o valoare dubioasa de genul -1000 de grade.
+Main - clasa care contine metoda main
+
+Puteam sa reduc numarul de clase cu aproximativ 2, dar configuratia asta era viziunea mea asupra proiectului.
+Casa contine termostatul, aparatul care simuleaza enuntul temei, dar si camere.
+Camerele contin senzori, dar si termostatul are legatura la senzori.
+Datele sunt stocate in senzorul repectiv, chiar daca normal ar fi undeva in termostat pe un hard.
+
+Termostatul implementeaza metodele care adauga datele citite de senzori, seteaza o temperatura globala noua, verifica daca trebuie pornita caldura, listeaza valorile cerute.
